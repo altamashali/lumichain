@@ -1,0 +1,8 @@
+General:
+- push everything to github
+- add todo.txt to gitignore
+- add slideshow galley to featured section
+- move links to footer? (similar to Dapp website)
+- Add section for “altamashali.weebly.com” to projects sections
+- Add web3.js to project skills
+- Change header links to target="_blank"

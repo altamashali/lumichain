@@ -1,31 +1,268 @@
 @font-face{
-    font-family: Montserrat-Bold;
-    src: url("/fonts/Montserrat/Montserrat-Bold.ttf");
+    font-family: Voltaire;
+    src: url("/assets/fonts/Voltaire/Voltaire-Regular.ttf");
 }
 @font-face{
-    font-family: Montserrat-Regular;
-    src: url("/fonts/Montserrat/Montserrat-Regular.ttf");
+    font-family: Montserrat;
+    src: url("/assets/fonts/Open_Sans/OpenSans-Regular.ttf");
 }
-body{
-    background-color: #18181E;
-    font-family: Montserrat-Regular;
+/* ======= HEADER ======= */
+.body{
+    margin: 0px;
+    margin-top: 85.2px;
+    font-family: Montserrat;
+    color: black;
+    background-color:  #BDBDBD;
 }
-.header{
-    text-align: center;
-    padding: 5px;
+.anchor{
+    display: block;
+    height: 85.2px; /*same height as header*/
+    margin-top: -85.2px; /*same height as header*/
+    visibility: hidden;
+  }
+.column-wrapper{
+    overflow: hidden;
 }
-.header-image{
-    width: 300px;
-    height: auto;
+.left-column{
+    float: left;
+    width: 75%;
 }
-#post-title{
+.right-column{
+    float: right;
+    width: 25%;
+}
+#heading{
     color: #DEC79B;
-    font-family: Montserrat-Bold;
-    font-size: large;
-    margin-top: 0px;
+    background-color: #18181E;
+    font-family: Voltaire;
+    display: table;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    height: 75px;
+    width: 100%;
+    top: 0px;
 }
-.instagram-post{
-    width: 33%;
-    height: auto;
+#profile-pic{
+    width: 50px;
+    height: 50px;
+    border-color: #DEC79B;
+    border-width: 1.5px;
+    border-radius: 50%;
+    border-style: solid;
+    text-align: center;
+    margin-left: 15px;
+}
+#left{
+    display: table-cell;
+    vertical-align: middle;
 
+}
+#center{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    
+}
+#center2{
+    display: table-cell;
+    font-size: large;
+    vertical-align: middle;
+}
+#right{    
+    display: table-cell;
+    vertical-align: middle;
+
+    width: auto;
+}
+#gold-effect{
+    background-color: #DEC79B;
+    border-radius: 50%;
+    padding: 3px;
+    max-width: 10%;
+    max-height: 10%;
+}
+#heading #page-style{
+    text-align: center;
+    list-style: none;
+    padding-inline-start: 0px;
+    
+}
+#page-style li{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    
+}
+.basic-info{
+    list-style: none;
+    width: fit-content;
+    float: right;
+    padding-left: 0px;
+}
+.basic-info li{
+    list-style-type: none;
+    display: inline;
+    margin: 6px;
+    color: white;
+
+}
+.link-effect{
+    color: #DEC79B;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+#name{
+    margin-top: 3px;
+    margin-bottom: 6px;
+    width: fit-content;
+}
+
+/* ======= SECTIONS ======= */
+.sections-left{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+.sections-right{
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
+.sections-bottom{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+    .section-title{
+        text-align: left;
+        font-size: larger;
+        font-family: Montserrat;
+        background-color: #18181E;
+        color: #DEC79B;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section-text{
+        margin: 0px;
+        padding: 15px;
+        background-color: #e5e7f0;
+        font-family: Montserrat;
+        font-size: medium;
+    }
+
+/* ======= SUBSECTIONS ======= */
+.subsections{
+    background-color: #e5e7f0;
+
+}
+    .subsection-title{
+        /* Prevents user from copying subsection title */
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        width: fit-content;
+
+        background-color: #e5e7f0;
+        color: #18181E;
+    }
+        .subsection-button{
+            display: inline-block;
+            vertical-align: middle;
+
+            color: #18181E;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: large;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .subsection-title-description{
+            display: inline-block;
+            vertical-align: middle;
+            font-family: Montserrat;
+            font-size: medium;
+            margin: 0px;
+        }
+        .badge{
+            display: inline-block;
+            vertical-align: middle;
+
+            background-color: #18181E;
+            color: #DEC79B;
+            font-size: 14px;
+
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            margin-left: 5px;
+
+            border-style: solid;
+            border-radius: 5px;
+            border-color: transparent;
+        }        
+    .subsection-text{
+        margin: 0px;
+        padding-bottom: 15px;
+        padding-left: 51.49px;
+        padding-right: 15px;
+
+        font-family: Montserrat;
+        font-size: medium;
+        display: none;
+        border-color: rgb(37, 37, 99);
+        background-color: #e5e7f0;        
+    }
+
+.resume-container{
+    text-align: center;
+    padding: 10px;
+    background-color: #18181E;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent;
+}
+.resume-button{
+    font-size: 18px;
+    color: #DEC79B;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+/* ======= FOOTER ======= */
+.body .footer-box{
+    background: #18181E;
+    text-align: center;
+    width: 100%;
+
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.copyright {
+    color: white;
+    font-size: 14px;
+}
+#use-case-link{
+    text-decoration-line: none;
+    color: #DEC79B;
 }
