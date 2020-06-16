@@ -2,14 +2,11 @@ pragma solidity >=0.4.21 <0.7.0;
 /* SPDX-License-Identifier: UNLICENSED */
 
 contract LumiToken{
-    // Constructor
-    // Set the total number of tokens
-    // Read the total number of token
 
     string public name = "Lumi Token"; // Name
     string public symbol = "LUMI"; // Symbol
     string public standard = "Lumi Token v1.0";
-    uint256 public totalSupply;
+    uint256 public totalSupply; // Read the total number of token
 
     event Transfer(
         address indexed _from,
@@ -26,9 +23,12 @@ contract LumiToken{
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance; // allowance: A approves B to spend C
 
+    // Constructor
     constructor (uint256 _initialSupply) public {
         balanceOf[msg.sender] = _initialSupply;
-        totalSupply = _initialSupply; // allocate the initial supply of 10,000,000 tokens
+        // Set the total number of tokens
+        // allocate the initial supply of 10,000,000 tokens
+        totalSupply = _initialSupply;
     }
 
     // Transfer
